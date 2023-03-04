@@ -12,6 +12,9 @@ namespace Project.ENTITIES.Models
         public double Square { get; set; }
         public string ModulerStand { get; set; }
         public string CustomStand { get; set; }
+        public int? OrderID { get; set; }
+
+        public virtual Order Order MyProperty { get; set; }
 
         public virtual List<ProductDetail> ProductDetails { get; set; }
         public virtual List<ProductPossibleProblem> ProductPossibleProblems { get; set; }
