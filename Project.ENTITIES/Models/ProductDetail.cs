@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITIES.Models
 {
-    public class ProductDetail
+    public class ProductDetail:BaseEntity
     {    
         // Product ve ExtraProduct Tabloları ÇokaÇok oldugundan ProductDetail Junction Tablosu açıldı
         public int ProductID { get; set; }
