@@ -14,7 +14,7 @@ namespace Project.ENTITIES.Models
         public string CustomStand { get; set; }
         public int? OrderID { get; set; }
 
-        public virtual Order Order MyProperty { get; set; }
+        public virtual Order Order  { get; set; }
 
         public virtual List<ProductDetail> ProductDetails { get; set; }
         public virtual List<ProductPossibleProblem> ProductPossibleProblems { get; set; }
