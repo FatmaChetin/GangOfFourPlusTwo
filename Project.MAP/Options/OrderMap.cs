@@ -11,7 +11,8 @@ namespace Project.MAP.Options
     {
         public OrderMap()
         {
-
+            Property(x => x.UnitPrice).HasParameterName("Ürün Fiyatı");
+            Property(x=> x.ShippingAdress).HasColumnName("Gönderim Adresi");
         }
     }
 }

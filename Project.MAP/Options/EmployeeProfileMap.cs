@@ -11,7 +11,10 @@ namespace Project.MAP.Options
     {
         public EmployeeProfileMap()
         {
-
+            ToTable("Çalışan Profili");
+            Property(x=> x.FirstName).HasColumnName("Adı");
+            Property(x => x.LastName).HasColumnName("Soyadı");
+            Property(x => x.ContactNumber).HasColumnName("Telefon Numarası");
         }
     }
 }

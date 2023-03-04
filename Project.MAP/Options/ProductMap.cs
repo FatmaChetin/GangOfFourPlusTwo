@@ -11,7 +11,9 @@ namespace Project.MAP.Options
     {
         public ProductMap()
         {
-
+            Property(x => x.Square).HasColumnName("Alan metrekaresi");
+            Property(x => x.ModulerStand).HasColumnName("Modüler Stand");
+            Property(x => x.CustomStand).HasColumnName("Özelleştirilmiş Stand");
         }
     }
 }

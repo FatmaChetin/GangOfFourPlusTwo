@@ -11,7 +11,11 @@ namespace Project.MAP.Options
     {
         public ExtraProductMap()
         {
-
+            Property(x => x.FoodServiceWorker).HasColumnName("Servis Elemanı");
+            Property(x => x.FairHostel).HasColumnName("Fuar Hostesi");
+            Property(x => x.StorageArea).HasColumnName("Depolama Alanı");
+            Property(x => x.InvititationCard).HasColumnName("Davetiye");
+           
         }
     }
 }

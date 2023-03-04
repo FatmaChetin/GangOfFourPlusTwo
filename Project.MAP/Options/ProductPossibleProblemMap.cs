@@ -11,7 +11,12 @@ namespace Project.MAP.Options
     {
         public ProductPossibleProblemMap()
         {
-
+            Ignore(x => x.ID);
+            HasKey(x => new
+            {
+                x.ProductID,
+                x.PossibleProblemID
+            });
         }
     }
 }

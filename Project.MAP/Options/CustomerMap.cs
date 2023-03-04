@@ -12,6 +12,10 @@ namespace Project.MAP.Options
     {
         public CustomerMap()
         {
+            Property(x => x.CompanyName).HasColumnName("Şirket Adı");
+            Property(x => x.CompanySector).HasColumnName("Şirket Sektörü");
+            Property(x => x.ContactNumber).HasColumnName("Telefon Numarası");
+            
 
         }
     }

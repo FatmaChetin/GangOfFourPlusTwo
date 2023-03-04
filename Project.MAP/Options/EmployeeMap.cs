@@ -11,8 +11,12 @@ namespace Project.MAP.Options
     {
         public EmployeeMap()
         {
-
+            ToTable("Çalışanlar");
+            Property(x=> x.UserName).HasColumnName("Kullanıcı Adı");
+            Property(x=> x.Password).HasColumnName("Şifre");
+            HasOptional(x => x.Profile).WithRequired(x => x.Employee);
         }
 
+     
     }
 }
