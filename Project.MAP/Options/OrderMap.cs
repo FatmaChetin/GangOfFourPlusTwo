@@ -10,8 +10,9 @@ namespace Project.MAP.Options
     public class OrderMap:BaseMap<Order>
     {
         public OrderMap()
-        {
-            Property(x => x.UnitPrice).HasParameterName("Ürün Fiyatı");
+        {// daha önce unitprice yazdığımız kısmı entitieste değiştirdiğimiz için burda da düzelttim.
+            ToTable("Siparişler");
+            Property(x => x.OrderFee).HasParameterName("Ürün Fiyatı");
             Property(x=> x.ShippingAdress).HasColumnName("Gönderim Adresi");
         }
     }

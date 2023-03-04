@@ -11,9 +11,11 @@ namespace Project.MAP.Options
     {
         public ProductMap()
         {
+            ToTable("Ürünler");
             Property(x => x.Square).HasColumnName("Alan metrekaresi");
             Property(x => x.ModulerStand).HasColumnName("Modüler Stand");
             Property(x => x.CustomStand).HasColumnName("Özelleştirilmiş Stand");
+            Property(X=> X.ProductPrice).HasParameterName("Ürün Fiyatı");
         }
     }
 }

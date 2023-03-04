@@ -11,6 +11,7 @@ namespace Project.MAP.Options
     {
         public PossibleProblemMap()
         {
+            ToTable("Olası Problemler");
             Property(x => x.ProblemsRelatedToTheServicesProvided).HasColumnName(" Ürüne bağlı olan problemler");
             Property(x => x.ExternalFactors).HasColumnName("Dış Etkilere Bağlı Problemler");
             Property(x => x.Description).HasColumnName("Açıklama");

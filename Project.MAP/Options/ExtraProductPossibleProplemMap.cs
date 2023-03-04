@@ -11,6 +11,7 @@ namespace Project.MAP.Options
     {
         public ExtraProductPossibleProplemMap()
         {
+            ToTable("Ekstra Ürünlerde Olası Problemler");
             Ignore(x => x.ID);
             HasKey(x => new 
             { 

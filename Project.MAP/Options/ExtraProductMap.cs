@@ -11,10 +11,13 @@ namespace Project.MAP.Options
     {
         public ExtraProductMap()
         {
+            ToTable("Ekstra Ürünler");
             Property(x => x.FoodServiceWorker).HasColumnName("Servis Elemanı");
             Property(x => x.FairHostel).HasColumnName("Fuar Hostesi");
             Property(x => x.StorageArea).HasColumnName("Depolama Alanı");
             Property(x => x.InvititationCard).HasColumnName("Davetiye");
+            Property(x => x.Transportation).HasColumnName("Nakliye");
+            Property(X => X.Assembly).HasColumnName("Montaj");
            
         }
     }
