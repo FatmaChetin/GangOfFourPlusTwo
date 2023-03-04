@@ -35,6 +35,23 @@ namespace Project.BLL.GenericRepository.IntRep
         bool Any(Expression<Func<T, bool>> exp);
         T FirstOrDefault(Expression<Func<T, bool>> exp);
 
+        IQueryable<X> Select<X>(Expression<Func<T, X>> exp) where X : class;
+
+        //Find
+
+        T Find(int id);
+
+        //Get Last Datas
+
+        List<T> GetLastDatas(int number);
+
+        //Get First Datas
+
+        List<T> GetFirstDatas(int number);
+
+        //Get Counted Datas
+        List<T> GetCountedDatas(int number);
+
 
     }
 }

@@ -53,6 +53,16 @@
   <ItemGroup>
     <Compile Include="DesignPattern\SingletonPattern\DBTool.cs" />
     <Compile Include="GenericRepository\BaseRep\BaseRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\CustomerRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\EmployeeProfileRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\EmployeeRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ExtraProductPossibleProblemRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ExtraProductRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\OrderRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\PossibleProblemRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ProductDetailRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ProductPossibleProblemRepository.cs" />
+    <Compile Include="GenericRepository\ConcRep\ProductRepository.cs" />
     <Compile Include="GenericRepository\IntRep\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,9 +70,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GenericRepository\ConcRep\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
       <Project>{7d666c84-17d5-41ba-9d5a-889ea032dd1d}</Project>
