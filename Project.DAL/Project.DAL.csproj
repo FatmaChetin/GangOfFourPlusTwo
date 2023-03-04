@@ -58,6 +58,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.ENTITIES\Project.ENTITIES.csproj">
+      <Project>{048E1968-652E-4E6D-BE44-2BE297F7F478}</Project>
+      <Name>Project.ENTITIES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.MAP\Project.MAP.csproj">
+      <Project>{2DA5FB2B-B693-4211-92C8-FFED85325875}</Project>
+      <Name>Project.MAP</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
