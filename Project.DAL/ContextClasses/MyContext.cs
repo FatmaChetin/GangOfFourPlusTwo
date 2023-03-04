@@ -35,7 +35,7 @@ namespace Project.DAL.ContextClasses
         public DbSet<Product> Products { get; set; }
         public DbSet<EmployeeProfile> EmployeeProfiles { get; set; }
         public DbSet<ExtraProduct> ExtraProducts { get; set; }
-        public DbSet<ExtraProductPossibleProblem> extraProductPossibleProblems { get; set; }
+        public DbSet<ExtraProductPossibleProblem> ExtraProductPossibleProblems { get; set; }
         public DbSet<PossibleProblem> PossibleProblems { get; set; }
         public DbSet<ProductPossibleProblem> ProductPossibleProblems { get; set; }
         public DbSet<ProductDetail> ProductDetails { get; set; }
