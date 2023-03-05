@@ -23,28 +23,33 @@ namespace Project.WinUI
         CustomerRepository _dbcustomer;
         private void btn_Ekle_Click(object sender, EventArgs e)
         {
-            Customer customer = new Customer();
-            customer.CompanyName = txt_Name.Text;
-            customer.CompanyAdress = txt_Adress.Text;
-            customer.CompanySector = txt_Sector.Text;
-            customer.ContactNumber = txt_Number.Text;
-            customer.Email = txt_Mail1.Text;
-            Customer c2= new Customer();
-            c2.CompanyName = txt_Isim.Text;
-            c2.CompanyAdress= txt_Adres.Text;
-            c2.CompanySector = txt_Sektor.Text;
-            c2.ContactNumber = txt_Numara.Text;
-            c2.Email = txt_Mail.Text;
+            Customer customer = new Customer()
+            {
+                CompanyName = txt_Name.Text,
+                CompanyAdress = txt_Adress.Text,
+                CompanySector = txt_Sector.Text,
+                ContactNumber = txt_Number.Text,
+                Email = txt_Mail1.Text
+            };
             
-            Form2 frm2 = new Form2();
-
-            Form3 frm3 = new Form3();
+            
+            Customer c2= new Customer()
+            {
+                CompanyName = txt_Isim.Text,
+                CompanyAdress = txt_Adres.Text,
+                CompanySector = txt_Sektor.Text,
+                ContactNumber = txt_Numara.Text,
+                Email = txt_Mail.Text
+            };
+            
             if (rdo_Yurtici.Checked == true)
             {
+                Form2 frm2 = new Form2();
                 frm2.ShowDialog();
             }
             else if (rdo_Global.Checked == true)
             {
+                Form3 frm3 = new Form3();
                 frm3.ShowDialog();
             }
         }
