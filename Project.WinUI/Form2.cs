@@ -16,11 +16,5 @@ namespace Project.WinUI
         {
             InitializeComponent();
         }
-
-        private void btn_LogOut_Click(object sender, EventArgs e)
-        {
-            Form2 frm2 = new Form2();
-            frm2.Close();
-        }
     }
 }

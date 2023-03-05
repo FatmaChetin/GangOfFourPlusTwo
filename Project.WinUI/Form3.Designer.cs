@@ -66,7 +66,6 @@
             this.btn_LogOut.TabIndex = 78;
             this.btn_LogOut.Text = "Logout";
             this.btn_LogOut.UseVisualStyleBackColor = true;
-            this.btn_LogOut.Click += new System.EventHandler(this.btn_LogOut_Click);
             // 
             // btn_Aktif
             // 
@@ -303,7 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 399);
+            this.ClientSize = new System.Drawing.Size(555, 391);
             this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.btn_Aktif);
             this.Controls.Add(this.btn_Pasif);

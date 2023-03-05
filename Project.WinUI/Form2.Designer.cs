@@ -63,26 +63,25 @@
             this.btn_Add.Location = new System.Drawing.Point(292, 167);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(120, 23);
-            this.btn_Add.TabIndex = 66;
+            this.btn_Add.TabIndex = 84;
             this.btn_Add.Text = "Fiyat Ekle ";
             this.btn_Add.UseVisualStyleBackColor = true;
             // 
             // btn_LogOut
             // 
-            this.btn_LogOut.Location = new System.Drawing.Point(440, 341);
+            this.btn_LogOut.Location = new System.Drawing.Point(463, 352);
             this.btn_LogOut.Name = "btn_LogOut";
             this.btn_LogOut.Size = new System.Drawing.Size(75, 23);
-            this.btn_LogOut.TabIndex = 65;
+            this.btn_LogOut.TabIndex = 83;
             this.btn_LogOut.Text = "Logout";
             this.btn_LogOut.UseVisualStyleBackColor = true;
-            this.btn_LogOut.Click += new System.EventHandler(this.btn_LogOut_Click);
             // 
             // btn_Aktif
             // 
             this.btn_Aktif.Location = new System.Drawing.Point(233, 352);
             this.btn_Aktif.Name = "btn_Aktif";
             this.btn_Aktif.Size = new System.Drawing.Size(141, 23);
-            this.btn_Aktif.TabIndex = 64;
+            this.btn_Aktif.TabIndex = 82;
             this.btn_Aktif.Text = "Organizasyon Aktif Etme";
             this.btn_Aktif.UseVisualStyleBackColor = true;
             // 
@@ -91,7 +90,7 @@
             this.btn_Pasif.Location = new System.Drawing.Point(13, 352);
             this.btn_Pasif.Name = "btn_Pasif";
             this.btn_Pasif.Size = new System.Drawing.Size(126, 23);
-            this.btn_Pasif.TabIndex = 63;
+            this.btn_Pasif.TabIndex = 81;
             this.btn_Pasif.Text = "Organizasyon İptali";
             this.btn_Pasif.UseVisualStyleBackColor = true;
             // 
@@ -101,7 +100,7 @@
             this.lbl_OrderDetails.Location = new System.Drawing.Point(12, 285);
             this.lbl_OrderDetails.Name = "lbl_OrderDetails";
             this.lbl_OrderDetails.Size = new System.Drawing.Size(400, 44);
-            this.lbl_OrderDetails.TabIndex = 62;
+            this.lbl_OrderDetails.TabIndex = 80;
             // 
             // lbl
             // 
@@ -110,7 +109,7 @@
             this.lbl.Location = new System.Drawing.Point(12, 266);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(106, 16);
-            this.lbl.TabIndex = 61;
+            this.lbl.TabIndex = 79;
             this.lbl.Text = "Sipariş Detaylari";
             // 
             // label8
@@ -120,7 +119,7 @@
             this.label8.Location = new System.Drawing.Point(10, 176);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 16);
-            this.label8.TabIndex = 60;
+            this.label8.TabIndex = 78;
             this.label8.Text = "Sipariş";
             // 
             // nmrcud_Adet
@@ -128,7 +127,7 @@
             this.nmrcud_Adet.Location = new System.Drawing.Point(15, 61);
             this.nmrcud_Adet.Name = "nmrcud_Adet";
             this.nmrcud_Adet.Size = new System.Drawing.Size(175, 20);
-            this.nmrcud_Adet.TabIndex = 59;
+            this.nmrcud_Adet.TabIndex = 77;
             // 
             // rdo_Field
             // 
@@ -136,7 +135,7 @@
             this.rdo_Field.Location = new System.Drawing.Point(15, 94);
             this.rdo_Field.Name = "rdo_Field";
             this.rdo_Field.Size = new System.Drawing.Size(46, 17);
-            this.rdo_Field.TabIndex = 58;
+            this.rdo_Field.TabIndex = 76;
             this.rdo_Field.TabStop = true;
             this.rdo_Field.Text = "Alan";
             this.rdo_Field.UseVisualStyleBackColor = true;
@@ -147,7 +146,7 @@
             this.rdo_Stand.Location = new System.Drawing.Point(15, 37);
             this.rdo_Stand.Name = "rdo_Stand";
             this.rdo_Stand.Size = new System.Drawing.Size(53, 17);
-            this.rdo_Stand.TabIndex = 57;
+            this.rdo_Stand.TabIndex = 75;
             this.rdo_Stand.TabStop = true;
             this.rdo_Stand.Text = "Stand";
             this.rdo_Stand.UseVisualStyleBackColor = true;
@@ -158,7 +157,7 @@
             this.lbl_Orders.Location = new System.Drawing.Point(12, 194);
             this.lbl_Orders.Name = "lbl_Orders";
             this.lbl_Orders.Size = new System.Drawing.Size(400, 33);
-            this.lbl_Orders.TabIndex = 56;
+            this.lbl_Orders.TabIndex = 74;
             // 
             // lst_Customer
             // 
@@ -166,14 +165,14 @@
             this.lst_Customer.Location = new System.Drawing.Point(418, 9);
             this.lst_Customer.Name = "lst_Customer";
             this.lst_Customer.Size = new System.Drawing.Size(120, 251);
-            this.lst_Customer.TabIndex = 55;
+            this.lst_Customer.TabIndex = 73;
             // 
             // btn_Price
             // 
             this.btn_Price.Location = new System.Drawing.Point(418, 266);
             this.btn_Price.Name = "btn_Price";
             this.btn_Price.Size = new System.Drawing.Size(120, 37);
-            this.btn_Price.TabIndex = 54;
+            this.btn_Price.TabIndex = 72;
             this.btn_Price.Text = "Fiyati Hesapla";
             this.btn_Price.UseVisualStyleBackColor = true;
             // 
@@ -184,7 +183,7 @@
             this.lbl_Price.Location = new System.Drawing.Point(427, 307);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(100, 22);
-            this.lbl_Price.TabIndex = 53;
+            this.lbl_Price.TabIndex = 71;
             // 
             // trb_Field
             // 
@@ -192,7 +191,7 @@
             this.trb_Field.Maximum = 200;
             this.trb_Field.Name = "trb_Field";
             this.trb_Field.Size = new System.Drawing.Size(180, 45);
-            this.trb_Field.TabIndex = 52;
+            this.trb_Field.TabIndex = 70;
             // 
             // label5
             // 
@@ -201,7 +200,7 @@
             this.label5.Location = new System.Drawing.Point(12, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 16);
-            this.label5.TabIndex = 51;
+            this.label5.TabIndex = 69;
             this.label5.Text = "Şirket Hizmetleri";
             // 
             // label6
@@ -210,7 +209,7 @@
             this.label6.Location = new System.Drawing.Point(12, 116);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 13);
-            this.label6.TabIndex = 50;
+            this.label6.TabIndex = 68;
             this.label6.Text = "İstenilen Alan m^2 Cinsinden";
             // 
             // grp_EkstraProduct
@@ -225,7 +224,7 @@
             this.grp_EkstraProduct.Location = new System.Drawing.Point(208, 44);
             this.grp_EkstraProduct.Name = "grp_EkstraProduct";
             this.grp_EkstraProduct.Size = new System.Drawing.Size(204, 117);
-            this.grp_EkstraProduct.TabIndex = 49;
+            this.grp_EkstraProduct.TabIndex = 67;
             this.grp_EkstraProduct.TabStop = false;
             this.grp_EkstraProduct.Text = "Ek Hizmetler";
             // 
@@ -303,7 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 396);
+            this.ClientSize = new System.Drawing.Size(555, 386);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.btn_Aktif);
