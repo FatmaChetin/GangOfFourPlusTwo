@@ -31,8 +31,13 @@ namespace Project.WinUI
             }
             else if(lst_Problems.SelectedIndex is 1)
             {
-                MessageBox.Show("In cases such as natural disasters such as flood, earthquake, landslide, and MONSTER ATTACK, there will be a delay according to the severity of the disaster.");
+                MessageBox.Show("In cases such as natural disasters such as Flooddisaster, Earthquake, Landslide, and MONSTER ATTACK, there will be a delay according to the severity of the disaster.");
             }
+        }
+
+        private void btn_LogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

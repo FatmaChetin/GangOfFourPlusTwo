@@ -31,8 +31,14 @@ namespace Project.WinUI
             }
             else if (lst_Problems.SelectedIndex is 1)
             {
-                MessageBox.Show("Sel,deprem,Heyelan,AYİSALDİRİSİ gibi doğal Afetlerin yaşanmasi gibi durumlarda afetin şiddetine göre bir öteleme olucaktir");
+                MessageBox.Show("Sel,Deprem,Heyelan,AYİSALDİRİSİ gibi doğal Afetlerin yaşanmasi gibi durumlarda afetin şiddetine göre bir öteleme olucaktir");
             }
+        }
+
+        private void btn_LogOut_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
         }
     }
 }
