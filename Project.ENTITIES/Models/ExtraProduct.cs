@@ -16,7 +16,7 @@ namespace Project.ENTITIES.Models
         public string FairHostel { get; set; }
         public string StorageArea { get; set; }
         public string InvititationCard { get; set; }
-        public string Transportation { get; set; }
+        public string Lojistic { get; set; }
         public string Assembly { get; set; }
 
         public virtual List<ProductDetail> ProductDetails { get; set; }

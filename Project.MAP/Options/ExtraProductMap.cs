@@ -16,7 +16,7 @@ namespace Project.MAP.Options
             Property(x => x.FairHostel).HasColumnName("Fuar Hostesi");
             Property(x => x.StorageArea).HasColumnName("Depolama Alanı");
             Property(x => x.InvititationCard).HasColumnName("Davetiye");
-            Property(x => x.Transportation).HasColumnName("Nakliye");
+            Property(x => x.Lojistic).HasColumnName("Nakliye");
             Property(X => X.Assembly).HasColumnName("Montaj");
            
         }
