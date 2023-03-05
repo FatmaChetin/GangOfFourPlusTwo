@@ -54,6 +54,7 @@
             this.ckb_FairHostel = new System.Windows.Forms.CheckBox();
             this.ckb_Waiter = new System.Windows.Forms.CheckBox();
             this.lst_Problems = new System.Windows.Forms.ListBox();
+            this.cmbStand = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcud_Piece)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trb_Field)).BeginInit();
             this.grp_EkstraProduct.SuspendLayout();
@@ -61,9 +62,10 @@
             // 
             // btn_LogOut
             // 
-            this.btn_LogOut.Location = new System.Drawing.Point(442, 352);
+            this.btn_LogOut.Location = new System.Drawing.Point(663, 542);
+            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_LogOut.Name = "btn_LogOut";
-            this.btn_LogOut.Size = new System.Drawing.Size(75, 23);
+            this.btn_LogOut.Size = new System.Drawing.Size(112, 35);
             this.btn_LogOut.TabIndex = 78;
             this.btn_LogOut.Text = "Logout";
             this.btn_LogOut.UseVisualStyleBackColor = true;
@@ -71,18 +73,20 @@
             // 
             // btn_Aktif
             // 
-            this.btn_Aktif.Location = new System.Drawing.Point(233, 355);
+            this.btn_Aktif.Location = new System.Drawing.Point(350, 546);
+            this.btn_Aktif.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Aktif.Name = "btn_Aktif";
-            this.btn_Aktif.Size = new System.Drawing.Size(141, 23);
+            this.btn_Aktif.Size = new System.Drawing.Size(212, 35);
             this.btn_Aktif.TabIndex = 76;
             this.btn_Aktif.Text = "Organizasyon Active";
             this.btn_Aktif.UseVisualStyleBackColor = true;
             // 
             // btn_Pasif
             // 
-            this.btn_Pasif.Location = new System.Drawing.Point(12, 355);
+            this.btn_Pasif.Location = new System.Drawing.Point(18, 546);
+            this.btn_Pasif.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Pasif.Name = "btn_Pasif";
-            this.btn_Pasif.Size = new System.Drawing.Size(126, 23);
+            this.btn_Pasif.Size = new System.Drawing.Size(189, 35);
             this.btn_Pasif.TabIndex = 77;
             this.btn_Pasif.Text = "Event Cancellation";
             this.btn_Pasif.UseVisualStyleBackColor = true;
@@ -90,18 +94,20 @@
             // lbl_OrderDetails
             // 
             this.lbl_OrderDetails.BackColor = System.Drawing.Color.DarkCyan;
-            this.lbl_OrderDetails.Location = new System.Drawing.Point(12, 288);
+            this.lbl_OrderDetails.Location = new System.Drawing.Point(18, 443);
+            this.lbl_OrderDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_OrderDetails.Name = "lbl_OrderDetails";
-            this.lbl_OrderDetails.Size = new System.Drawing.Size(395, 44);
+            this.lbl_OrderDetails.Size = new System.Drawing.Size(592, 68);
             this.lbl_OrderDetails.TabIndex = 75;
             // 
             // lbl
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl.Location = new System.Drawing.Point(12, 269);
+            this.lbl.Location = new System.Drawing.Point(18, 414);
+            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(86, 16);
+            this.lbl.Size = new System.Drawing.Size(126, 25);
             this.lbl.TabIndex = 74;
             this.lbl.Text = "Order Details";
             // 
@@ -109,25 +115,28 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(12, 183);
+            this.label8.Location = new System.Drawing.Point(18, 282);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 16);
+            this.label8.Size = new System.Drawing.Size(104, 25);
             this.label8.TabIndex = 73;
             this.label8.Text = "Last Order";
             // 
             // nmrcud_Piece
             // 
-            this.nmrcud_Piece.Location = new System.Drawing.Point(15, 60);
+            this.nmrcud_Piece.Location = new System.Drawing.Point(22, 92);
+            this.nmrcud_Piece.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nmrcud_Piece.Name = "nmrcud_Piece";
-            this.nmrcud_Piece.Size = new System.Drawing.Size(175, 20);
+            this.nmrcud_Piece.Size = new System.Drawing.Size(262, 26);
             this.nmrcud_Piece.TabIndex = 72;
             // 
             // rdo_Field
             // 
             this.rdo_Field.AutoSize = true;
-            this.rdo_Field.Location = new System.Drawing.Point(15, 94);
+            this.rdo_Field.Location = new System.Drawing.Point(22, 145);
+            this.rdo_Field.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdo_Field.Name = "rdo_Field";
-            this.rdo_Field.Size = new System.Drawing.Size(47, 17);
+            this.rdo_Field.Size = new System.Drawing.Size(68, 24);
             this.rdo_Field.TabIndex = 70;
             this.rdo_Field.TabStop = true;
             this.rdo_Field.Text = "Field";
@@ -136,9 +145,10 @@
             // rdo_Stand
             // 
             this.rdo_Stand.AutoSize = true;
-            this.rdo_Stand.Location = new System.Drawing.Point(15, 36);
+            this.rdo_Stand.Location = new System.Drawing.Point(22, 55);
+            this.rdo_Stand.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdo_Stand.Name = "rdo_Stand";
-            this.rdo_Stand.Size = new System.Drawing.Size(53, 17);
+            this.rdo_Stand.Size = new System.Drawing.Size(77, 24);
             this.rdo_Stand.TabIndex = 71;
             this.rdo_Stand.TabStop = true;
             this.rdo_Stand.Text = "Stand";
@@ -147,33 +157,38 @@
             // lbl_Orders
             // 
             this.lbl_Orders.BackColor = System.Drawing.Color.DarkCyan;
-            this.lbl_Orders.Location = new System.Drawing.Point(12, 201);
+            this.lbl_Orders.Location = new System.Drawing.Point(18, 309);
+            this.lbl_Orders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Orders.Name = "lbl_Orders";
-            this.lbl_Orders.Size = new System.Drawing.Size(395, 33);
+            this.lbl_Orders.Size = new System.Drawing.Size(592, 51);
             this.lbl_Orders.TabIndex = 69;
             // 
             // lst_Products
             // 
             this.lst_Products.FormattingEnabled = true;
-            this.lst_Products.Location = new System.Drawing.Point(419, 9);
+            this.lst_Products.ItemHeight = 20;
+            this.lst_Products.Location = new System.Drawing.Point(628, 14);
+            this.lst_Products.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lst_Products.Name = "lst_Products";
-            this.lst_Products.Size = new System.Drawing.Size(120, 251);
+            this.lst_Products.Size = new System.Drawing.Size(178, 384);
             this.lst_Products.TabIndex = 68;
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(287, 166);
+            this.btn_Add.Location = new System.Drawing.Point(430, 255);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(120, 23);
+            this.btn_Add.Size = new System.Drawing.Size(180, 35);
             this.btn_Add.TabIndex = 67;
             this.btn_Add.Text = "Add Price";
             this.btn_Add.UseVisualStyleBackColor = true;
             // 
             // btn_Price
             // 
-            this.btn_Price.Location = new System.Drawing.Point(419, 265);
+            this.btn_Price.Location = new System.Drawing.Point(628, 408);
+            this.btn_Price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Price.Name = "btn_Price";
-            this.btn_Price.Size = new System.Drawing.Size(120, 37);
+            this.btn_Price.Size = new System.Drawing.Size(180, 57);
             this.btn_Price.TabIndex = 66;
             this.btn_Price.Text = "Calculat The Price";
             this.btn_Price.UseVisualStyleBackColor = true;
@@ -182,35 +197,39 @@
             // 
             this.lbl_Price.BackColor = System.Drawing.Color.DarkGray;
             this.lbl_Price.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Price.Location = new System.Drawing.Point(429, 307);
+            this.lbl_Price.Location = new System.Drawing.Point(644, 472);
+            this.lbl_Price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Price.Name = "lbl_Price";
-            this.lbl_Price.Size = new System.Drawing.Size(100, 22);
+            this.lbl_Price.Size = new System.Drawing.Size(150, 34);
             this.lbl_Price.TabIndex = 65;
             // 
             // trb_Field
             // 
-            this.trb_Field.Location = new System.Drawing.Point(10, 141);
+            this.trb_Field.Location = new System.Drawing.Point(15, 217);
+            this.trb_Field.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.trb_Field.Maximum = 200;
             this.trb_Field.Name = "trb_Field";
-            this.trb_Field.Size = new System.Drawing.Size(180, 45);
+            this.trb_Field.Size = new System.Drawing.Size(270, 69);
             this.trb_Field.TabIndex = 64;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Location = new System.Drawing.Point(18, 14);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 16);
+            this.label5.Size = new System.Drawing.Size(178, 25);
             this.label5.TabIndex = 63;
             this.label5.Text = "Company Services";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 116);
+            this.label6.Location = new System.Drawing.Point(18, 178);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.Size = new System.Drawing.Size(125, 20);
             this.label6.TabIndex = 62;
             this.label6.Text = "AreaTrack (m^2)";
             // 
@@ -223,9 +242,11 @@
             this.grp_EkstraProduct.Controls.Add(this.ckb_Assembly);
             this.grp_EkstraProduct.Controls.Add(this.ckb_FairHostel);
             this.grp_EkstraProduct.Controls.Add(this.ckb_Waiter);
-            this.grp_EkstraProduct.Location = new System.Drawing.Point(203, 43);
+            this.grp_EkstraProduct.Location = new System.Drawing.Point(304, 66);
+            this.grp_EkstraProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grp_EkstraProduct.Name = "grp_EkstraProduct";
-            this.grp_EkstraProduct.Size = new System.Drawing.Size(204, 117);
+            this.grp_EkstraProduct.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grp_EkstraProduct.Size = new System.Drawing.Size(306, 180);
             this.grp_EkstraProduct.TabIndex = 61;
             this.grp_EkstraProduct.TabStop = false;
             this.grp_EkstraProduct.Text = "Additional Services";
@@ -233,9 +254,10 @@
             // chk_InvitationCard
             // 
             this.chk_InvitationCard.AutoSize = true;
-            this.chk_InvitationCard.Location = new System.Drawing.Point(105, 66);
+            this.chk_InvitationCard.Location = new System.Drawing.Point(158, 102);
+            this.chk_InvitationCard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chk_InvitationCard.Name = "chk_InvitationCard";
-            this.chk_InvitationCard.Size = new System.Drawing.Size(94, 17);
+            this.chk_InvitationCard.Size = new System.Drawing.Size(137, 24);
             this.chk_InvitationCard.TabIndex = 9;
             this.chk_InvitationCard.Text = "İnvitation Card";
             this.chk_InvitationCard.UseVisualStyleBackColor = true;
@@ -243,9 +265,10 @@
             // ckb_Catering
             // 
             this.ckb_Catering.AutoSize = true;
-            this.ckb_Catering.Location = new System.Drawing.Point(9, 66);
+            this.ckb_Catering.Location = new System.Drawing.Point(14, 102);
+            this.ckb_Catering.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_Catering.Name = "ckb_Catering";
-            this.ckb_Catering.Size = new System.Drawing.Size(65, 17);
+            this.ckb_Catering.Size = new System.Drawing.Size(95, 24);
             this.ckb_Catering.TabIndex = 7;
             this.ckb_Catering.Text = "Catering";
             this.ckb_Catering.UseVisualStyleBackColor = true;
@@ -253,9 +276,10 @@
             // ckb_Transportation
             // 
             this.ckb_Transportation.AutoSize = true;
-            this.ckb_Transportation.Location = new System.Drawing.Point(105, 43);
+            this.ckb_Transportation.Location = new System.Drawing.Point(158, 66);
+            this.ckb_Transportation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_Transportation.Name = "ckb_Transportation";
-            this.ckb_Transportation.Size = new System.Drawing.Size(62, 17);
+            this.ckb_Transportation.Size = new System.Drawing.Size(89, 24);
             this.ckb_Transportation.TabIndex = 8;
             this.ckb_Transportation.Text = "Logistic";
             this.ckb_Transportation.UseVisualStyleBackColor = true;
@@ -263,9 +287,10 @@
             // ckb_StorageArea
             // 
             this.ckb_StorageArea.AutoSize = true;
-            this.ckb_StorageArea.Location = new System.Drawing.Point(9, 43);
+            this.ckb_StorageArea.Location = new System.Drawing.Point(14, 66);
+            this.ckb_StorageArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_StorageArea.Name = "ckb_StorageArea";
-            this.ckb_StorageArea.Size = new System.Drawing.Size(88, 17);
+            this.ckb_StorageArea.Size = new System.Drawing.Size(130, 24);
             this.ckb_StorageArea.TabIndex = 2;
             this.ckb_StorageArea.Text = "Storage Area";
             this.ckb_StorageArea.UseVisualStyleBackColor = true;
@@ -273,9 +298,10 @@
             // ckb_Assembly
             // 
             this.ckb_Assembly.AutoSize = true;
-            this.ckb_Assembly.Location = new System.Drawing.Point(105, 20);
+            this.ckb_Assembly.Location = new System.Drawing.Point(158, 31);
+            this.ckb_Assembly.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_Assembly.Name = "ckb_Assembly";
-            this.ckb_Assembly.Size = new System.Drawing.Size(70, 17);
+            this.ckb_Assembly.Size = new System.Drawing.Size(103, 24);
             this.ckb_Assembly.TabIndex = 3;
             this.ckb_Assembly.Text = "Assembly";
             this.ckb_Assembly.UseVisualStyleBackColor = true;
@@ -283,9 +309,10 @@
             // ckb_FairHostel
             // 
             this.ckb_FairHostel.AutoSize = true;
-            this.ckb_FairHostel.Location = new System.Drawing.Point(9, 20);
+            this.ckb_FairHostel.Location = new System.Drawing.Point(14, 31);
+            this.ckb_FairHostel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_FairHostel.Name = "ckb_FairHostel";
-            this.ckb_FairHostel.Size = new System.Drawing.Size(76, 17);
+            this.ckb_FairHostel.Size = new System.Drawing.Size(112, 24);
             this.ckb_FairHostel.TabIndex = 5;
             this.ckb_FairHostel.Text = "Fair Hostel";
             this.ckb_FairHostel.UseVisualStyleBackColor = true;
@@ -293,9 +320,10 @@
             // ckb_Waiter
             // 
             this.ckb_Waiter.AutoSize = true;
-            this.ckb_Waiter.Location = new System.Drawing.Point(9, 89);
+            this.ckb_Waiter.Location = new System.Drawing.Point(14, 137);
+            this.ckb_Waiter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ckb_Waiter.Name = "ckb_Waiter";
-            this.ckb_Waiter.Size = new System.Drawing.Size(126, 17);
+            this.ckb_Waiter.Size = new System.Drawing.Size(183, 24);
             this.ckb_Waiter.TabIndex = 4;
             this.ckb_Waiter.Text = "Food Servise Worker";
             this.ckb_Waiter.UseVisualStyleBackColor = true;
@@ -303,17 +331,28 @@
             // lst_Problems
             // 
             this.lst_Problems.FormattingEnabled = true;
-            this.lst_Problems.Location = new System.Drawing.Point(545, 9);
+            this.lst_Problems.ItemHeight = 20;
+            this.lst_Problems.Location = new System.Drawing.Point(818, 14);
+            this.lst_Problems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lst_Problems.Name = "lst_Problems";
-            this.lst_Problems.Size = new System.Drawing.Size(163, 225);
+            this.lst_Problems.Size = new System.Drawing.Size(242, 344);
             this.lst_Problems.TabIndex = 79;
             this.lst_Problems.Click += new System.EventHandler(this.lst_Problemler_Click);
             // 
+            // cmbStand
+            // 
+            this.cmbStand.FormattingEnabled = true;
+            this.cmbStand.Location = new System.Drawing.Point(163, 51);
+            this.cmbStand.Name = "cmbStand";
+            this.cmbStand.Size = new System.Drawing.Size(121, 28);
+            this.cmbStand.TabIndex = 87;
+            // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 391);
+            this.ClientSize = new System.Drawing.Size(1080, 602);
+            this.Controls.Add(this.cmbStand);
             this.Controls.Add(this.lst_Problems);
             this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.btn_Aktif);
@@ -333,6 +372,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.grp_EkstraProduct);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -373,5 +413,6 @@
         private System.Windows.Forms.CheckBox ckb_FairHostel;
         private System.Windows.Forms.CheckBox ckb_Waiter;
         private System.Windows.Forms.ListBox lst_Problems;
+        private System.Windows.Forms.ComboBox cmbStand;
     }
 }

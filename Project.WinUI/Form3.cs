@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.BLL.GenericRepository.ConcRep;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,9 @@ namespace Project.WinUI
         public Form3()
         {
             InitializeComponent();
+            _dbcustomer = new CustomerRepository();
         }
+        CustomerRepository _dbcustomer;
 
         private void Form3_Load(object sender, EventArgs e)
         {
