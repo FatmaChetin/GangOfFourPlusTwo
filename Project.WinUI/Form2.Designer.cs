@@ -231,7 +231,7 @@
             // ckb_Catering
             // 
             this.ckb_Catering.AutoSize = true;
-            this.ckb_Catering.Location = new System.Drawing.Point(107, 43);
+            this.ckb_Catering.Location = new System.Drawing.Point(11, 66);
             this.ckb_Catering.Name = "ckb_Catering";
             this.ckb_Catering.Size = new System.Drawing.Size(65, 17);
             this.ckb_Catering.TabIndex = 7;
@@ -241,7 +241,7 @@
             // ckb_InvitationCard
             // 
             this.ckb_InvitationCard.AutoSize = true;
-            this.ckb_InvitationCard.Location = new System.Drawing.Point(11, 89);
+            this.ckb_InvitationCard.Location = new System.Drawing.Point(106, 66);
             this.ckb_InvitationCard.Name = "ckb_InvitationCard";
             this.ckb_InvitationCard.Size = new System.Drawing.Size(92, 17);
             this.ckb_InvitationCard.TabIndex = 8;
@@ -251,11 +251,11 @@
             // ckb_Transportation
             // 
             this.ckb_Transportation.AutoSize = true;
-            this.ckb_Transportation.Location = new System.Drawing.Point(11, 66);
+            this.ckb_Transportation.Location = new System.Drawing.Point(107, 43);
             this.ckb_Transportation.Name = "ckb_Transportation";
-            this.ckb_Transportation.Size = new System.Drawing.Size(66, 17);
+            this.ckb_Transportation.Size = new System.Drawing.Size(61, 17);
             this.ckb_Transportation.TabIndex = 8;
-            this.ckb_Transportation.Text = "Taşinma";
+            this.ckb_Transportation.Text = "Nakliye";
             this.ckb_Transportation.UseVisualStyleBackColor = true;
             // 
             // ckb_StorageArea
@@ -273,9 +273,9 @@
             this.ckb_Assembly.AutoSize = true;
             this.ckb_Assembly.Location = new System.Drawing.Point(107, 20);
             this.ckb_Assembly.Name = "ckb_Assembly";
-            this.ckb_Assembly.Size = new System.Drawing.Size(94, 17);
+            this.ckb_Assembly.Size = new System.Drawing.Size(58, 17);
             this.ckb_Assembly.TabIndex = 3;
-            this.ckb_Assembly.Text = "Toplanti Odasi";
+            this.ckb_Assembly.Text = "Montaj";
             this.ckb_Assembly.UseVisualStyleBackColor = true;
             // 
             // ckb_FairHostel
@@ -291,7 +291,7 @@
             // ckb_Waiter
             // 
             this.ckb_Waiter.AutoSize = true;
-            this.ckb_Waiter.Location = new System.Drawing.Point(107, 66);
+            this.ckb_Waiter.Location = new System.Drawing.Point(11, 89);
             this.ckb_Waiter.Name = "ckb_Waiter";
             this.ckb_Waiter.Size = new System.Drawing.Size(93, 17);
             this.ckb_Waiter.TabIndex = 4;
