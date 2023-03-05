@@ -16,6 +16,7 @@ namespace Project.MAP.Options
             Property(x => x.CompanyName).HasColumnName("Şirket Adı");
             Property(x => x.CompanySector).HasColumnName("Şirket Sektörü");
             Property(x => x.ContactNumber).HasColumnName("Telefon Numarası");
+            Property(x => x.CompanyAdress).HasColumnName("Şirket Adresi");
             Property(x=> x.Email).HasColumnName("E-mail adresi");
 
         }

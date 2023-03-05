@@ -11,6 +11,7 @@ namespace Project.ENTITIES.Models
         public string CompanyName { get; set; }
         public string CompanySector { get; set; }
         public string ContactNumber { get; set; }
+        public string  CompanyAdress { get; set; }
         public string Email { get; set; }
         public int? EmployeeID { get; set; }
         
