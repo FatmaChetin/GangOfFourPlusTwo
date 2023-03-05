@@ -39,7 +39,7 @@
             this.rdo_Field = new System.Windows.Forms.RadioButton();
             this.rdo_Stand = new System.Windows.Forms.RadioButton();
             this.lbl_Orders = new System.Windows.Forms.Label();
-            this.lst_Customer = new System.Windows.Forms.ListBox();
+            this.lst_Products = new System.Windows.Forms.ListBox();
             this.btn_Price = new System.Windows.Forms.Button();
             this.lbl_Price = new System.Windows.Forms.Label();
             this.trb_Field = new System.Windows.Forms.TrackBar();
@@ -53,6 +53,7 @@
             this.ckb_Assembly = new System.Windows.Forms.CheckBox();
             this.ckb_FairHostel = new System.Windows.Forms.CheckBox();
             this.ckb_Waiter = new System.Windows.Forms.CheckBox();
+            this.lst_Problems = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.nmrcud_Adet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trb_Field)).BeginInit();
             this.grp_EkstraProduct.SuspendLayout();
@@ -159,13 +160,13 @@
             this.lbl_Orders.Size = new System.Drawing.Size(400, 33);
             this.lbl_Orders.TabIndex = 74;
             // 
-            // lst_Customer
+            // lst_Products
             // 
-            this.lst_Customer.FormattingEnabled = true;
-            this.lst_Customer.Location = new System.Drawing.Point(418, 9);
-            this.lst_Customer.Name = "lst_Customer";
-            this.lst_Customer.Size = new System.Drawing.Size(120, 251);
-            this.lst_Customer.TabIndex = 73;
+            this.lst_Products.FormattingEnabled = true;
+            this.lst_Products.Location = new System.Drawing.Point(418, 9);
+            this.lst_Products.Name = "lst_Products";
+            this.lst_Products.Size = new System.Drawing.Size(120, 251);
+            this.lst_Products.TabIndex = 73;
             // 
             // btn_Price
             // 
@@ -298,11 +299,21 @@
             this.ckb_Waiter.Text = "Yemek Servisi";
             this.ckb_Waiter.UseVisualStyleBackColor = true;
             // 
+            // lst_Problems
+            // 
+            this.lst_Problems.FormattingEnabled = true;
+            this.lst_Problems.Location = new System.Drawing.Point(544, 9);
+            this.lst_Problems.Name = "lst_Problems";
+            this.lst_Problems.Size = new System.Drawing.Size(152, 225);
+            this.lst_Problems.TabIndex = 80;
+            this.lst_Problems.Click += new System.EventHandler(this.lst_Problems_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 386);
+            this.ClientSize = new System.Drawing.Size(708, 386);
+            this.Controls.Add(this.lst_Problems);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.btn_LogOut);
             this.Controls.Add(this.btn_Aktif);
@@ -314,7 +325,7 @@
             this.Controls.Add(this.rdo_Field);
             this.Controls.Add(this.rdo_Stand);
             this.Controls.Add(this.lbl_Orders);
-            this.Controls.Add(this.lst_Customer);
+            this.Controls.Add(this.lst_Products);
             this.Controls.Add(this.btn_Price);
             this.Controls.Add(this.lbl_Price);
             this.Controls.Add(this.trb_Field);
@@ -323,6 +334,7 @@
             this.Controls.Add(this.grp_EkstraProduct);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmrcud_Adet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trb_Field)).EndInit();
             this.grp_EkstraProduct.ResumeLayout(false);
@@ -345,7 +357,7 @@
         private System.Windows.Forms.RadioButton rdo_Field;
         private System.Windows.Forms.RadioButton rdo_Stand;
         private System.Windows.Forms.Label lbl_Orders;
-        private System.Windows.Forms.ListBox lst_Customer;
+        private System.Windows.Forms.ListBox lst_Products;
         private System.Windows.Forms.Button btn_Price;
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.TrackBar trb_Field;
@@ -359,5 +371,6 @@
         private System.Windows.Forms.CheckBox ckb_Assembly;
         private System.Windows.Forms.CheckBox ckb_FairHostel;
         private System.Windows.Forms.CheckBox ckb_Waiter;
+        private System.Windows.Forms.ListBox lst_Problems;
     }
 }

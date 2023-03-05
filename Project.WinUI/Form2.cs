@@ -16,5 +16,23 @@ namespace Project.WinUI
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            lst_Problems.Items.Add("Ürüne bağlı olan problemler");
+            lst_Problems.Items.Add("Dış Etkilere Bağlı Problemler");
+        }
+
+        private void lst_Problems_Click(object sender, EventArgs e)
+        {
+            if (lst_Problems.SelectedIndex is 0)
+            {
+                MessageBox.Show("Isci cikarimi,Yeni işci alimi,Montajda gecikme,Nakliyede gecikme");
+            }
+            else if (lst_Problems.SelectedIndex is 1)
+            {
+                MessageBox.Show("Sel,deprem,Heyelan,AYİSALDİRİSİ gibi doğal Afetlerin yaşanmasi gibi durumlarda afetin şiddetine göre bir öteleme olucaktir");
+            }
+        }
     }
 }

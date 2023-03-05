@@ -16,5 +16,19 @@ namespace Project.WinUI
         {
             InitializeComponent();
         }
+
+        private void btn_Ekle_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            Form3 frm3 = new Form3();
+            if (rdo_Yurtici.Checked == true)
+            {
+                frm2.ShowDialog();
+            }
+            else if (rdo_Global.Checked == true)
+            {
+                frm3.ShowDialog();
+            }
+        }
     }
 }

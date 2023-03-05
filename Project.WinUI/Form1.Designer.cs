@@ -258,6 +258,7 @@
             this.btn_Ekle.TabIndex = 55;
             this.btn_Ekle.Text = "Kaydol";
             this.btn_Ekle.UseVisualStyleBackColor = true;
+            this.btn_Ekle.Click += new System.EventHandler(this.btn_Ekle_Click);
             // 
             // txt_Adres
             // 
