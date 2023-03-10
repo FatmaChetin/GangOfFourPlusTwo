@@ -12,6 +12,7 @@ namespace Project.ENTITIES.Models
         public int ProductID { get; set; }
         public int ExtraProductID { get; set; }
 
+        //relational
         public virtual Product Product { get; set; }
         public virtual ExtraProduct ExtraProduct { get; set; }
     }

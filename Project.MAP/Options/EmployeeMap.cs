@@ -14,7 +14,7 @@ namespace Project.MAP.Options
             ToTable("Çalışanlar");
             Property(x=> x.UserName).HasColumnName("Kullanıcı Adı");
             Property(x=> x.Password).HasColumnName("Şifre");
-            HasOptional(x => x.Profile).WithRequired(x => x.Employee);
+            HasOptional(x => x.EmployeeProfile).WithRequired(x => x.Employee);
         }
 
      

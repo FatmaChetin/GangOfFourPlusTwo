@@ -10,14 +10,14 @@ namespace Project.ENTITIES.Models
     {   // Ana ürünler, stand ve alandır. Stand tipi (modüler ve özel yapım) ve kiralanacak alan (m2 cinsinden) fiyatlandırılacaktır. 
 
         
-        public decimal ProductPrice { get; set; }
-        public double Square { get; set; }
-        public string ModulerStand { get; set; }
-        public string CustomStand { get; set; }
+        public decimal ProductPrice { get; set; }// ürün fiyatı
+        public double Square { get; set; }// alan
+        public string ModulerStand { get; set; }// modüler stand
+        public string CustomStand { get; set; }// özel stand
         public int? OrderID { get; set; }
 
+        //relational
         public virtual Order Order  { get; set; }
-
         public virtual List<ProductDetail> ProductDetails { get; set; }
         public virtual List<ProductPossibleProblem> ProductPossibleProblems { get; set; }
     }

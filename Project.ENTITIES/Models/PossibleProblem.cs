@@ -8,10 +8,11 @@ namespace Project.ENTITIES.Models
 {
     public class PossibleProblem:BaseEntity 
     {
-        public string ProblemsRelatedToTheServicesProvided { get; set; }
-        public string ExternalFactors { get; set; }
-        public string Description { get; set; }
+        public string ProblemsRelatedToTheServicesProvided { get; set; }// servis kaynaklı problemler
+        public string ExternalFactors { get; set; }// dış etkenler
+        public string Description { get; set; }// açıklama
 
+        //relational
         public virtual List<ExtraProductPossibleProblem> ExtraProductPossibleProblems { get; set; }
         public virtual List<ProductPossibleProblem> ProductPossibleProblems { get; set; }
 

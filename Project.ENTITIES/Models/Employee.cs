@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 namespace Project.ENTITIES.Models
 {
     public class Employee:BaseEntity
-    {
-        public string UserName { get; set; }
-        public string Password { get; set; }
+    { // 1 employee n customer
+      // 1 customer 1 employee 
+        public string UserName { get; set; }// kullanıcı adı
+        public string Password { get; set; }// şifre
 
 
         //Relational Properties
-        public virtual EmployeeProfile Profile { get; set; }
+        public virtual EmployeeProfile EmployeeProfile { get; set; }
 
         public virtual List<Customer> Customers { get; set; }
         

@@ -28,391 +28,227 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_LogOut = new System.Windows.Forms.Button();
-            this.btn_Aktif = new System.Windows.Forms.Button();
-            this.btn_Pasif = new System.Windows.Forms.Button();
-            this.lbl_OrderDetails = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.nmrcud_Piece = new System.Windows.Forms.NumericUpDown();
-            this.rdo_Field = new System.Windows.Forms.RadioButton();
-            this.rdo_Stand = new System.Windows.Forms.RadioButton();
-            this.lbl_Orders = new System.Windows.Forms.Label();
-            this.lst_Products = new System.Windows.Forms.ListBox();
-            this.btn_Add = new System.Windows.Forms.Button();
-            this.btn_Price = new System.Windows.Forms.Button();
-            this.lbl_Price = new System.Windows.Forms.Label();
-            this.trb_Field = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.grp_EkstraProduct = new System.Windows.Forms.GroupBox();
-            this.chk_InvitationCard = new System.Windows.Forms.CheckBox();
-            this.ckb_Catering = new System.Windows.Forms.CheckBox();
-            this.ckb_Transportation = new System.Windows.Forms.CheckBox();
-            this.ckb_StorageArea = new System.Windows.Forms.CheckBox();
-            this.ckb_Assembly = new System.Windows.Forms.CheckBox();
-            this.ckb_FairHostel = new System.Windows.Forms.CheckBox();
-            this.ckb_Waiter = new System.Windows.Forms.CheckBox();
-            this.lst_Problems = new System.Windows.Forms.ListBox();
-            this.cmbStand = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcud_Piece)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trb_Field)).BeginInit();
-            this.grp_EkstraProduct.SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnKapat = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_LogOut
+            // groupBox1
             // 
-            this.btn_LogOut.Location = new System.Drawing.Point(663, 542);
-            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_LogOut.Name = "btn_LogOut";
-            this.btn_LogOut.Size = new System.Drawing.Size(112, 35);
-            this.btn_LogOut.TabIndex = 78;
-            this.btn_LogOut.Text = "Logout";
-            this.btn_LogOut.UseVisualStyleBackColor = true;
-            this.btn_LogOut.Click += new System.EventHandler(this.btn_LogOut_Click);
+            this.groupBox1.BackColor = System.Drawing.Color.LightSalmon;
+            this.groupBox1.Controls.Add(this.btnKapat);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Location = new System.Drawing.Point(1, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(392, 536);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Ürün Fiyat Listesi";
             // 
-            // btn_Aktif
+            // groupBox3
             // 
-            this.btn_Aktif.Location = new System.Drawing.Point(350, 546);
-            this.btn_Aktif.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_Aktif.Name = "btn_Aktif";
-            this.btn_Aktif.Size = new System.Drawing.Size(212, 35);
-            this.btn_Aktif.TabIndex = 76;
-            this.btn_Aktif.Text = "Organizasyon Active";
-            this.btn_Aktif.UseVisualStyleBackColor = true;
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(0, 218);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(392, 249);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ekstra Ürünlerin Fiyat Listesi";
             // 
-            // btn_Pasif
+            // label11
             // 
-            this.btn_Pasif.Location = new System.Drawing.Point(18, 546);
-            this.btn_Pasif.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_Pasif.Name = "btn_Pasif";
-            this.btn_Pasif.Size = new System.Drawing.Size(189, 35);
-            this.btn_Pasif.TabIndex = 77;
-            this.btn_Pasif.Text = "Event Cancellation";
-            this.btn_Pasif.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 171);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 16);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Montaj 1500TL";
             // 
-            // lbl_OrderDetails
+            // label12
             // 
-            this.lbl_OrderDetails.BackColor = System.Drawing.Color.DarkCyan;
-            this.lbl_OrderDetails.Location = new System.Drawing.Point(18, 443);
-            this.lbl_OrderDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_OrderDetails.Name = "lbl_OrderDetails";
-            this.lbl_OrderDetails.Size = new System.Drawing.Size(592, 68);
-            this.lbl_OrderDetails.TabIndex = 75;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 201);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 16);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Nakliye =";
             // 
-            // lbl
+            // label10
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl.Location = new System.Drawing.Point(18, 414);
-            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(126, 25);
-            this.lbl.TabIndex = 74;
-            this.lbl.Text = "Order Details";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 230);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(236, 16);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Nakliye kmx50 TL şeklinde hesaplanır.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 143);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(244, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Depolama Alanı Kiralama Günlük 750TL";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(18, 282);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(6, 114);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(104, 25);
-            this.label8.TabIndex = 73;
-            this.label8.Text = "Last Order";
+            this.label8.Size = new System.Drawing.Size(135, 16);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Garson Günlük 300TL";
             // 
-            // nmrcud_Piece
+            // label7
             // 
-            this.nmrcud_Piece.Location = new System.Drawing.Point(22, 92);
-            this.nmrcud_Piece.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.nmrcud_Piece.Name = "nmrcud_Piece";
-            this.nmrcud_Piece.Size = new System.Drawing.Size(262, 26);
-            this.nmrcud_Piece.TabIndex = 72;
-            // 
-            // rdo_Field
-            // 
-            this.rdo_Field.AutoSize = true;
-            this.rdo_Field.Location = new System.Drawing.Point(22, 145);
-            this.rdo_Field.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_Field.Name = "rdo_Field";
-            this.rdo_Field.Size = new System.Drawing.Size(68, 24);
-            this.rdo_Field.TabIndex = 70;
-            this.rdo_Field.TabStop = true;
-            this.rdo_Field.Text = "Field";
-            this.rdo_Field.UseVisualStyleBackColor = true;
-            // 
-            // rdo_Stand
-            // 
-            this.rdo_Stand.AutoSize = true;
-            this.rdo_Stand.Location = new System.Drawing.Point(22, 55);
-            this.rdo_Stand.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rdo_Stand.Name = "rdo_Stand";
-            this.rdo_Stand.Size = new System.Drawing.Size(77, 24);
-            this.rdo_Stand.TabIndex = 71;
-            this.rdo_Stand.TabStop = true;
-            this.rdo_Stand.Text = "Stand";
-            this.rdo_Stand.UseVisualStyleBackColor = true;
-            // 
-            // lbl_Orders
-            // 
-            this.lbl_Orders.BackColor = System.Drawing.Color.DarkCyan;
-            this.lbl_Orders.Location = new System.Drawing.Point(18, 309);
-            this.lbl_Orders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Orders.Name = "lbl_Orders";
-            this.lbl_Orders.Size = new System.Drawing.Size(592, 51);
-            this.lbl_Orders.TabIndex = 69;
-            // 
-            // lst_Products
-            // 
-            this.lst_Products.FormattingEnabled = true;
-            this.lst_Products.ItemHeight = 20;
-            this.lst_Products.Location = new System.Drawing.Point(628, 14);
-            this.lst_Products.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lst_Products.Name = "lst_Products";
-            this.lst_Products.Size = new System.Drawing.Size(178, 384);
-            this.lst_Products.TabIndex = 68;
-            // 
-            // btn_Add
-            // 
-            this.btn_Add.Location = new System.Drawing.Point(430, 255);
-            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(180, 35);
-            this.btn_Add.TabIndex = 67;
-            this.btn_Add.Text = "Add Price";
-            this.btn_Add.UseVisualStyleBackColor = true;
-            // 
-            // btn_Price
-            // 
-            this.btn_Price.Location = new System.Drawing.Point(628, 408);
-            this.btn_Price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_Price.Name = "btn_Price";
-            this.btn_Price.Size = new System.Drawing.Size(180, 57);
-            this.btn_Price.TabIndex = 66;
-            this.btn_Price.Text = "Calculat The Price";
-            this.btn_Price.UseVisualStyleBackColor = true;
-            // 
-            // lbl_Price
-            // 
-            this.lbl_Price.BackColor = System.Drawing.Color.DarkGray;
-            this.lbl_Price.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Price.Location = new System.Drawing.Point(644, 472);
-            this.lbl_Price.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_Price.Name = "lbl_Price";
-            this.lbl_Price.Size = new System.Drawing.Size(150, 34);
-            this.lbl_Price.TabIndex = 65;
-            // 
-            // trb_Field
-            // 
-            this.trb_Field.Location = new System.Drawing.Point(15, 217);
-            this.trb_Field.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.trb_Field.Maximum = 200;
-            this.trb_Field.Name = "trb_Field";
-            this.trb_Field.Size = new System.Drawing.Size(270, 69);
-            this.trb_Field.TabIndex = 64;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(18, 14);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 25);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "Company Services";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 86);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(148, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Catering Günlük 2000TL";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 178);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(6, 58);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 20);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "AreaTrack (m^2)";
+            this.label6.Size = new System.Drawing.Size(187, 16);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Davetiyeler 250 Adet  = 500 TL";
             // 
-            // grp_EkstraProduct
+            // label5
             // 
-            this.grp_EkstraProduct.Controls.Add(this.chk_InvitationCard);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_Catering);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_Transportation);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_StorageArea);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_Assembly);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_FairHostel);
-            this.grp_EkstraProduct.Controls.Add(this.ckb_Waiter);
-            this.grp_EkstraProduct.Location = new System.Drawing.Point(304, 66);
-            this.grp_EkstraProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grp_EkstraProduct.Name = "grp_EkstraProduct";
-            this.grp_EkstraProduct.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grp_EkstraProduct.Size = new System.Drawing.Size(306, 180);
-            this.grp_EkstraProduct.TabIndex = 61;
-            this.grp_EkstraProduct.TabStop = false;
-            this.grp_EkstraProduct.Text = "Additional Services";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(170, 16);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Fuar Hostesi  Günlük 500TL";
             // 
-            // chk_InvitationCard
+            // groupBox2
             // 
-            this.chk_InvitationCard.AutoSize = true;
-            this.chk_InvitationCard.Location = new System.Drawing.Point(158, 102);
-            this.chk_InvitationCard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chk_InvitationCard.Name = "chk_InvitationCard";
-            this.chk_InvitationCard.Size = new System.Drawing.Size(137, 24);
-            this.chk_InvitationCard.TabIndex = 9;
-            this.chk_InvitationCard.Text = "İnvitation Card";
-            this.chk_InvitationCard.UseVisualStyleBackColor = true;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(0, 39);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(392, 142);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ana Ürünlerin Fiyat Listesi";
             // 
-            // ckb_Catering
+            // label4
             // 
-            this.ckb_Catering.AutoSize = true;
-            this.ckb_Catering.Location = new System.Drawing.Point(14, 102);
-            this.ckb_Catering.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_Catering.Name = "ckb_Catering";
-            this.ckb_Catering.Size = new System.Drawing.Size(95, 24);
-            this.ckb_Catering.TabIndex = 7;
-            this.ckb_Catering.Text = "Catering";
-            this.ckb_Catering.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(258, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Alan Seçimi m2x 500 TL olarak hesaplanır.";
             // 
-            // ckb_Transportation
+            // label3
             // 
-            this.ckb_Transportation.AutoSize = true;
-            this.ckb_Transportation.Location = new System.Drawing.Point(158, 66);
-            this.ckb_Transportation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_Transportation.Name = "ckb_Transportation";
-            this.ckb_Transportation.Size = new System.Drawing.Size(89, 24);
-            this.ckb_Transportation.TabIndex = 8;
-            this.ckb_Transportation.Text = "Logistic";
-            this.ckb_Transportation.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Alan Seçimi=";
             // 
-            // ckb_StorageArea
+            // label2
             // 
-            this.ckb_StorageArea.AutoSize = true;
-            this.ckb_StorageArea.Location = new System.Drawing.Point(14, 66);
-            this.ckb_StorageArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_StorageArea.Name = "ckb_StorageArea";
-            this.ckb_StorageArea.Size = new System.Drawing.Size(130, 24);
-            this.ckb_StorageArea.TabIndex = 2;
-            this.ckb_StorageArea.Text = "Storage Area";
-            this.ckb_StorageArea.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Özel Stand 15000TL";
             // 
-            // ckb_Assembly
+            // label1
             // 
-            this.ckb_Assembly.AutoSize = true;
-            this.ckb_Assembly.Location = new System.Drawing.Point(158, 31);
-            this.ckb_Assembly.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_Assembly.Name = "ckb_Assembly";
-            this.ckb_Assembly.Size = new System.Drawing.Size(103, 24);
-            this.ckb_Assembly.TabIndex = 3;
-            this.ckb_Assembly.Text = "Assembly";
-            this.ckb_Assembly.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Modüler Stand  5000 TL";
             // 
-            // ckb_FairHostel
+            // btnKapat
             // 
-            this.ckb_FairHostel.AutoSize = true;
-            this.ckb_FairHostel.Location = new System.Drawing.Point(14, 31);
-            this.ckb_FairHostel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_FairHostel.Name = "ckb_FairHostel";
-            this.ckb_FairHostel.Size = new System.Drawing.Size(112, 24);
-            this.ckb_FairHostel.TabIndex = 5;
-            this.ckb_FairHostel.Text = "Fair Hostel";
-            this.ckb_FairHostel.UseVisualStyleBackColor = true;
-            // 
-            // ckb_Waiter
-            // 
-            this.ckb_Waiter.AutoSize = true;
-            this.ckb_Waiter.Location = new System.Drawing.Point(14, 137);
-            this.ckb_Waiter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ckb_Waiter.Name = "ckb_Waiter";
-            this.ckb_Waiter.Size = new System.Drawing.Size(183, 24);
-            this.ckb_Waiter.TabIndex = 4;
-            this.ckb_Waiter.Text = "Food Servise Worker";
-            this.ckb_Waiter.UseVisualStyleBackColor = true;
-            // 
-            // lst_Problems
-            // 
-            this.lst_Problems.FormattingEnabled = true;
-            this.lst_Problems.ItemHeight = 20;
-            this.lst_Problems.Location = new System.Drawing.Point(818, 14);
-            this.lst_Problems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lst_Problems.Name = "lst_Problems";
-            this.lst_Problems.Size = new System.Drawing.Size(242, 344);
-            this.lst_Problems.TabIndex = 79;
-            this.lst_Problems.Click += new System.EventHandler(this.lst_Problemler_Click);
-            // 
-            // cmbStand
-            // 
-            this.cmbStand.FormattingEnabled = true;
-            this.cmbStand.Location = new System.Drawing.Point(163, 51);
-            this.cmbStand.Name = "cmbStand";
-            this.cmbStand.Size = new System.Drawing.Size(121, 28);
-            this.cmbStand.TabIndex = 87;
+            this.btnKapat.BackColor = System.Drawing.Color.DarkGray;
+            this.btnKapat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKapat.Location = new System.Drawing.Point(185, 486);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(186, 30);
+            this.btnKapat.TabIndex = 1;
+            this.btnKapat.Text = "Fiyat Listesini Kapat";
+            this.btnKapat.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 602);
-            this.Controls.Add(this.cmbStand);
-            this.Controls.Add(this.lst_Problems);
-            this.Controls.Add(this.btn_LogOut);
-            this.Controls.Add(this.btn_Aktif);
-            this.Controls.Add(this.btn_Pasif);
-            this.Controls.Add(this.lbl_OrderDetails);
-            this.Controls.Add(this.lbl);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.nmrcud_Piece);
-            this.Controls.Add(this.rdo_Field);
-            this.Controls.Add(this.rdo_Stand);
-            this.Controls.Add(this.lbl_Orders);
-            this.Controls.Add(this.lst_Products);
-            this.Controls.Add(this.btn_Add);
-            this.Controls.Add(this.btn_Price);
-            this.Controls.Add(this.lbl_Price);
-            this.Controls.Add(this.trb_Field);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.grp_EkstraProduct);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(397, 539);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
             this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.nmrcud_Piece)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trb_Field)).EndInit();
-            this.grp_EkstraProduct.ResumeLayout(false);
-            this.grp_EkstraProduct.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_LogOut;
-        private System.Windows.Forms.Button btn_Aktif;
-        private System.Windows.Forms.Button btn_Pasif;
-        private System.Windows.Forms.Label lbl_OrderDetails;
-        private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.NumericUpDown nmrcud_Piece;
-        private System.Windows.Forms.RadioButton rdo_Field;
-        private System.Windows.Forms.RadioButton rdo_Stand;
-        private System.Windows.Forms.Label lbl_Orders;
-        private System.Windows.Forms.ListBox lst_Products;
-        private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.Button btn_Price;
-        private System.Windows.Forms.Label lbl_Price;
-        private System.Windows.Forms.TrackBar trb_Field;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox grp_EkstraProduct;
-        private System.Windows.Forms.CheckBox chk_InvitationCard;
-        private System.Windows.Forms.CheckBox ckb_Catering;
-        private System.Windows.Forms.CheckBox ckb_Transportation;
-        private System.Windows.Forms.CheckBox ckb_StorageArea;
-        private System.Windows.Forms.CheckBox ckb_Assembly;
-        private System.Windows.Forms.CheckBox ckb_FairHostel;
-        private System.Windows.Forms.CheckBox ckb_Waiter;
-        private System.Windows.Forms.ListBox lst_Problems;
-        private System.Windows.Forms.ComboBox cmbStand;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnKapat;
     }
 }
